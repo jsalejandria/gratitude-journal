@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "content": "Watched Guardians of the Galaxy: Volume 3 again",
+      "date": "May 3, 2023",
+      "id": 1,
+      "favorite": true
+    },
+    {
+      "content": "Ate lamb chops for Sunday lunch with the family",
+      "date": "May 7, 2023",
+      "id": 2,
+      "favorite": false
+    },
+    {
+      "content": "Watched Evil Dead Rise with the cousins",
+      "date": "May 10, 2023",
+      "id": 3,
+      "favorite": false
+    },
+    {
+      "content": "Received copy of Tears of the Kingdom",
+      "date": "May 12, 2023",
+      "id": 4,
+      "favorite": true
+    },
+    {
+      "content": "Celebrated Mothers' Day in Mann Hann",
+      "date": "May 14, 2023",
+      "id": 6919533260037982,
+      "favorite": false
+    },
+    {
+      "content": "Flight to Tokyo",
+      "date": "Feb 20, 2023",
+      "id": 9721201065466650,
+      "favorite": true
+    },
+    {
+      "content": "Had Christmas Dinner with the family",
+      "date": "Dec 25, 2022",
+      "id": 7085671020864721,
+      "favorite": false
+    }
+  ]
+}

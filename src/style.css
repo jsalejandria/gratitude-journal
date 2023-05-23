@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+  position: fixed;
+}
+
+/* --- --- --- --- --- HEADER --- --- --- --- --- --- */
+
+#header {
+  border-bottom: 2px solid #f2c744;
+  background-color: #f2f2f2;
+  height: 100px;
+  width: 100%;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#sun {
+  filter: invert(79%) sepia(88%) saturate(494%) hue-rotate(321deg)
+    brightness(97%) contrast(95%);
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 4px;
+}
+
+.title {
+  font-family: "Lato";
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+}
+
+/* --- --- --- --- --- MAIN --- --- --- --- --- --- */
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+/* --- --- --- --- --- SIDEBAR --- --- --- --- --- --- */
+
+#sidebar {
+  background-color: white;
+  width: 250px;
+  height: calc(100vh - 100px);
+  border-right: 1px solid darkgray;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: start;
+}
+
+.sbHeader {
+  margin: 20px 15px 10px;
+  font-family: "Lato";
+  font-size: 28px;
+  transform: scaleX(0.9);
+}
+
+hr {
+  height: 2px;
+  margin: -5px auto 10px;
+  width: 200px;
+  border-width: 0;
+  color: #404040;
+  background-color: #404040;
+}
+
+.sbitems {
+  margin: 3px 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sbitems > img {
+  margin-right: 18px;
+}
+
+.sbitems > img:hover {
+  cursor: pointer;
+}
+
+.sbitems > button,
+.archiveItems {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  align-items: left;
+  margin: 3px 0px 2px;
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+.sbitems > button:hover {
+  text-decoration: underline;
+  color: #606060;
+}
+
+.archiveItems:hover {
+  text-decoration: underline;
+  color: #606060;
+}
+
+.archiveItems,
+.archiveItems:visited {
+  margin: 3px 100px 3px 30px;
+  font-family: "Lato";
+  font-size: 18px;
+  text-decoration: none;
+  color: #404040;
+}
+
+/* --- --- --- --- --- CONTENT --- --- --- --- --- --- */
+
+#content {
+  background-color: #f2f2f2;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 250px);
+  display: block;
+  overflow: auto;
+}
+
+.titleBox {
+  height: 80px;
+  width: 1550px;
+  margin: 30px auto;
+  padding-left: 25px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: #f2b749;
+  color: #404040;
+  font-family: "Lato";
+  font-size: 32px;
+}
+
+#entryWrapper {
+  width: 1580px;
+  margin: 30px auto;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+#dateOrder {
+  width: 75px;
+  margin: 10px 15px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Lato";
+  font-size: 22px;
+  color: #df9100;
+}
+
+#dateOrder > button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#iconButton:hover {
+  cursor: pointer;
+}
+
+#dateOrder > button:hover {
+  text-decoration: underline;
+  color: #ec9a00;
+}
+
+.entry {
+  height: 22px;
+  width: 1550px;
+  padding: 4px 0px;
+  border-top: 1px solid #f2b749;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.entryDate {
+  width: 210px;
+  margin-left: 3px;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.entryContent {
+  min-width: 1200px;
+  padding-top: 1px;
+  font-family: "Lato";
+  font-size: 18px;
+  color: #404040;
+}
+
+.star,
+.starOutline {
+  filter: invert(91%) sepia(18%) saturate(2859%) hue-rotate(324deg)
+    brightness(103%) contrast(90%);
+}
+
+.trash {
+  filter: invert(13%) sepia(83%) saturate(4586%) hue-rotate(4deg)
+    brightness(85%) contrast(124%);
+}
+
+/*
+.trash:before {
+  position: relative;
+}
+
+.trash:after {
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+*/
+
+.star:hover,
+.starOutline:hover,
+.edit:hover,
+.trash:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.star:active,
+.starOutline:active {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+/* --- --- --- --- --- SEARCHBAR --- --- --- --- --- --- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+#searchBar {
+  width: 300px;
+  margin-right: 50px;
+  display: flex;
+}
+
+#search {
+  width: 100%;
+  border: 3px solid #404040;
+  border-right: none;
+  padding: 5px;
+  height: 17px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #404040;
+}
+
+#search:focus {
+  color: #404040;
+}
+
+#searchButton {
+  width: 40px;
+  height: 33px;
+  border: 1px solid #404040;
+  background: #404040;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* --- --- --- --- --- NEW BUTTON --- --- --- --- --- --- */
+
+.newPost {
+  margin: 10px 55px;
+}
+
+#newButton {
+  align-items: center;
+  background-color: #f2b749;
+  height: 34px;
+  width: 120px;
+  border: 0.5px solid #97979779;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #404040;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 12px;
+  text-align: left;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#newButton:active,
+#newButton:hover {
+  outline: 0;
+}
+
+#newButton:active,
+#newButton:active:hover {
+  background-color: #f2c744;
+  box-shadow: rgba(7, 7, 7, 0.12) 0 2px 6px 0 inset;
+  color: #404040;
+}
+
+#newButton:hover {
+  background-color: #f2b749;
+  box-shadow: rgba(7, 7, 7, 0.12) 0 2px 6px 0 inset;
+  color: #404040;
+}
+
+/* --- --- --- --- --- POST FORM --- --- --- --- --- --- */
+
+.form-popup {
+  display: none;
+  border: 3px solid #f1f1f1;
+}
+
+.form-container {
+  max-width: 650px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.form-container p {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: bolder;
+  color: #404040;
+  margin: 10px 10px 20px;
+}
+
+.dateWrapper {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.postBox {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container textarea {
+  width: 600px;
+  height: 40px;
+  white-space: normal;
+  padding: 7px 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-size: 16px;
+}
+
+.form-container input[type="text"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.form-container .btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #f2b749;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0px 10px 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #404040;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.message {
+  font-style: italic;
+  color: #800e13;
+  margin-left: 14px;
+}
