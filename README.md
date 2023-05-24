@@ -1,3 +1,17 @@
+## Gratitude Journal
+
+Using ReactJS and Axios library
+
+To use:
+1. Clone or download the project
+2. Open the project in VSCode
+3. Open the terminal and input the following:
+	$ npm install
+4. Split terminal and input the two commands below in separate terminals:
+	$ npx json-server --port 3001 --watch db.json
+	$ npm start
+	
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
