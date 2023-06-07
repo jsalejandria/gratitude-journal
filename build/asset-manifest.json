@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/gratitude-journal/static/css/main.e6568a25.css",
+    "main.js": "/gratitude-journal/static/js/main.5bef7282.js",
+    "index.html": "/gratitude-journal/index.html",
+    "static/media/sun.svg": "/gratitude-journal/static/media/sun.a3d8e77d0f79f95ade8c0e17f2891672.svg",
+    "static/media/edit.svg": "/gratitude-journal/static/media/edit.c846b91bc57c7f0f2387a7dfba100025.svg",
+    "static/media/star-outline.svg": "/gratitude-journal/static/media/star-outline.c2e6e6dd118d33c26922aa0089c89016.svg",
+    "static/media/trash.svg": "/gratitude-journal/static/media/trash.bcf8d6ff346603c8a51ab63a51579941.svg",
+    "static/media/star.svg": "/gratitude-journal/static/media/star.de7ced177d66bb006694c870ba5271cd.svg",
+    "main.e6568a25.css.map": "/gratitude-journal/static/css/main.e6568a25.css.map",
+    "main.5bef7282.js.map": "/gratitude-journal/static/js/main.5bef7282.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6568a25.css",
+    "static/js/main.5bef7282.js"
+  ]
+}
